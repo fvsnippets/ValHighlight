@@ -1,0 +1,27 @@
+<idea-plugin>
+  <id>ValHighlight</id>
+
+  <name>Val Highlight</name>
+
+  <depends>com.intellij.modules.java</depends>
+
+  <description>
+    <![CDATA[
+      ValHighlight:
+      Highlights Lombok's val in Java classes just as if it were a standard keyword.
+    ]]>
+  </description>
+  <change-notes>
+    <![CDATA[
+      <ul>
+        <li><b>1.0</b> Initial release.</li>
+      </ul>
+    ]]>
+  </change-notes>
+
+  <vendor url="https://github.org/fvsnippets/">Federico Valido</vendor>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <annotator language="JAVA" implementationClass="com.github.fsnippets.valhighlight.annotator.ValHighlightAnnotator"/>
+  </extensions>
+</idea-plugin>
